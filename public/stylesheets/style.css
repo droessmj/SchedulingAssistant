@@ -1,0 +1,131 @@
+body, div {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+}
+
+h1, h2, h3{
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    color: #00B7FF;
+}
+.inline{
+    display: inline-block;
+    margin: 0px 0px 0px 45px;
+}
+#calendar{
+    margin:  0px auto;
+    padding-top: 10px;
+    background-color: #FFF;
+    text-align: center;
+    height: 700px;
+    width: 960px;
+}
+
+#calendar p{
+    font-size: 80%;
+}
+
+.calendar-day{
+    width: 120px;
+    height: 110px;
+    /*background-color: #A39899; */
+    float: left;
+    border: solid;
+    border-width: 1px;
+    background: -moz-linear-gradient(top, rgba(160,117,120,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(160,117,120,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(160,117,120,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(160,117,120,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(160,117,120,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(160,117,120,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a07578', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
+}
+
+.calendar-day:hover{
+    border-color: #FFF;
+}
+
+.freeblock{
+    width: 100%;
+    height: 20px;
+    background-color: #AC1F20;
+    border: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.freeblock:hover{
+    border-color: #9A1825;
+}
+
+.date{
+    margin-top: 0px;
+    padding: 1px 0px 0px 2px;
+    text-align: left;
+    float: left
+}
+
+.close{
+    position: absolute;
+    right: 5px;
+    top:    5px;
+}
+.close:hover{
+    cursor: pointer;
+}
+
+#dayView{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 600px;
+    background-color: #DDD;
+    text-align: center;
+    display: none;
+    z-index: 3;
+
+}
+
+#showingForm{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 600px;
+    background-color: #9A1825;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+
+#header{
+    background-color: #9A1825;
+    width: 100%;
+    text-align: center;
+}
+
+#footer{
+    margin: 0px auto;
+    background-color: #9A1825;
+    text-align: center;
+    height: 100px;
+    padding: 20px 0px 0px 0px;
+    color: #FFF;
+}
+
+#blackout{
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    display: none;
+}

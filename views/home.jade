@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400')
+        script(src="/javascripts/jquery-2.1.1.min.js")
+        script(src="/javascripts/pagescripts.js")
+    body
+        header(id="header")
+            img(src="/images/banner.png")
+        div(id="blackout")
+        div(id="calendar")
+            h1 Lori's Calendar
+            h2(id="MonthYear") August 2014
+            p Select a day below with an open free slot to begin scheduling your showing
+                div(class="inline")
+                    -for (var i=0; i<5; ++i)
+                        - for (var j=0; j<7; ++j)
+                            div(class="calendar-day")
+                                div(class="date")
+                                    span=((i+1)*(j+1))
+                                div(id=((i+1)*(j+1)))
+                                span &nbsp;
+                                -for (var k=0; k<3; ++k)
+                                    div(class="freeblock")
+                                        span=k + " free block"                          
+        div(id="dayView")
+        div(id="showingForm")
+            h2 Select a house to view
+        footer(id="footer")
+            p If you have any problems, please contact Lori at 608.778.9805
