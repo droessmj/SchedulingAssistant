@@ -44,7 +44,7 @@ function updateCalendarDays(){
     var lasDayOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 
 
-    alert(daysInMonth + " " + currentDay + " " + firstDayOfMonth + " " + lasDayOfMonth);
+    //alert(daysInMonth + " " + currentDay + " " + firstDayOfMonth + " " + lasDayOfMonth);
     for(var i=1; i<36; ++i){
         //$('#'+i).text((i+1)+"");
     }
