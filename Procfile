@@ -1,1 +1,2 @@
-web: node web.js
+web: npm install
+web: npm start
